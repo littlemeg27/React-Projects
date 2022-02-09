@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Pages/Home';
+import Home from './pages';
 import About from './Pages/About';
 import Goldens from './Pages/Goldens';
 import Poodles from './Pages/Poodles';
