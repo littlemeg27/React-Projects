@@ -1,6 +1,7 @@
 import React from 'react';
   
-const GoldenDoodles = () => {
+const GoldenDoodles = () => 
+{
   return (
 	<div
 	  style={{

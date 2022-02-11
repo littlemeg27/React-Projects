@@ -1,6 +1,7 @@
 import React from 'react';
   
-const BusinessPlan = () => {
+const BusinessPlan = () => 
+{
   return (
 	<div
 	  style={{

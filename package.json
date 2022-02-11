@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.2.1"
+  },
+  "devDependencies": {
+    "source-map-loader": "^3.0.1"
+  }
+}
