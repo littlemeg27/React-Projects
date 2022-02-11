@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from "react";
 import './App.css';
+import { Redirect } from 'react-router';
 import Navbar from './Components/Navbar';
 import Index from './Components/Index';
-import { BrowserRouter as Router, Switch, Route }from'react-router-dom';
+import { Routes , Route } from 'react-router-dom';
 import Home from './Pages';
 import index from './index';
 import Indexx from './Pages/Indexx';
@@ -21,7 +22,7 @@ function App()
   return (
     <Router>
       <Navbar />
-      <Switch>
+      <Route>
         <Route path='/Indexx' exact component={Indexx} />
         <Route path='/About' component={About} />
         <Route path='/Goldens' component={Goldens} />
@@ -30,7 +31,7 @@ function App()
         <Route path='/TheFarm' component={TheFarm} />
         <Route path='/BusinessPlan' component={BusinessPlan} />
         <Route path='/Resourses' component={Resourses} />
-      </Switch>
+      </Route>
     </Router>
   );
 }
