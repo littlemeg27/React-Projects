@@ -1,39 +1,29 @@
 import React, { Component } from "react";
 import './App.css';
+import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router';
-import Navbar from './Components/Navbar';
-import Index from './Components/Index';
-import { Routes , Route } from 'react-router-dom';
-import Home from './Pages';
-import index from './index';
-import Indexx from './Pages/Indexx';
-import About from './Pages/About';
-import Goldens from './Pages/Goldens';
-import Poodles from './Pages/Poodles';
-import GoldenDoodles from './Pages/GoldenDoodles';
-import TheFarm from './Pages/TheFarm';
-import BusinessPlan from './Pages/BusinessPlan';
-import Resourses from './Pages/Resourses';
+import { Link, NavLink } from 'react-router-dom';
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
+import Home from './pages';
+import About from './pages/about';
+import Contact from './pages/contact';
+import SignUp from './pages/signup';
+import SignIn from './pages/signin';
 
-
-  
-function App() 
-{
+function App() {
   return (
     <Router>
       <Navbar />
-      <Route>
-        <Route path='/Indexx' exact component={Indexx} />
-        <Route path='/About' component={About} />
-        <Route path='/Goldens' component={Goldens} />
-        <Route path='/Poodles' component={Poodles} />
-        <Route path='/GoldenDoodles' component={GoldenDoodles} />
-        <Route path='/TheFarm' component={TheFarm} />
-        <Route path='/BusinessPlan' component={BusinessPlan} />
-        <Route path='/Resourses' component={Resourses} />
-      </Route>
+      <Routes>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/sign-up" component={SignUp} />
+      </Routes>
     </Router>
   );
 }
-  
+
 export default App;
