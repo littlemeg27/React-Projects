@@ -20,12 +20,12 @@ body {
   border-radius: 5px;
 }
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-}
+} */
 
 .btn {
   display: inline-block;
@@ -55,7 +55,7 @@ body {
 }
 
 .task {
-  background: #f4f4f4;
+  background:#110033;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;

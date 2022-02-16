@@ -10,11 +10,12 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import SignUp from './pages/signup';
 import SignIn from './pages/signin';
-import Header from './components/aboutHeader'
-import { useState } from 'react'
-//import Header from './components/about/Header'
+import Header from './components/Header';
+import MainBody from './components/MainBody';
+import { useState } from 'react';
 
-function App() {
+function App() 
+{
   return (
   <div className="App">
     <h1>
@@ -29,8 +30,8 @@ function App() {
           <Route path="/sign-up" component={SignUp} />
         </Routes>
       </Router>
+      <MainBody /> 
     </h1>
-    <h1>Hello From React</h1>
   </div>
   );
 }

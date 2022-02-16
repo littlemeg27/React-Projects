@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
- const Header = ({title, onAdd, showAdd }) => 
+ const Header = ({title}) => 
  {	
 	return(
 		<header className = 'header'>
@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 
 Header.defaultProps =
 {
-	title: 'Task Tracker',
+	title: 'Project Pax',
 }
 
 Header.propTypes = 
