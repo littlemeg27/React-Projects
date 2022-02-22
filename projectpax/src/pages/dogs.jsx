@@ -1,19 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
+//Functional Component
 
 const Dogs = () => {
   return (
     <div className="dogs">
-      <h1>
-        Welcome to our website! style=
-        {{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      </h1>
+      <h3>Dogs</h3>
+      <small>Content</small>
     </div>
   );
 };
+
 export default Dogs;

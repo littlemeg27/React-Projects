@@ -15,23 +15,22 @@ const Navbar = () => {
       <Nav>
         <NavLogo to="/">Logo</NavLogo>
         <Bars />
-
         <NavMenu>
-          <NavLink to="/" activeStyle={{ color: "black" }}>
+          <NavLink to="/" activeStyle={{ color: "grey" }}>
             Home
           </NavLink>
-          <NavLink to="/about" activeStyle={{ color: "black" }}>
+          <NavLink to="/about" activeStyle={{ color: "grey" }}>
             About
           </NavLink>
-          <NavLink to="/theFarm" activeStyle={{ color: "black" }}>
+          <NavLink to="/theFarm" activeStyle={{ color: "grey" }}>
             The Farm
           </NavLink>
-          <NavLink to="/dogs" activeStyle={{ color: "black" }}>
+          <NavLink to="/dogs" activeStyle={{ color: "grey" }}>
             Dogs
           </NavLink>
-          <NavBtn>
-            <NavBtnLink to="/donate">Donate</NavBtnLink>
-          </NavBtn>
+          <NavLink to="/contact" activeStyle={{ color: "grey" }}>
+            Contact
+          </NavLink>
         </NavMenu>
       </Nav>
     </>

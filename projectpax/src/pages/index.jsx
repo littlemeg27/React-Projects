@@ -1,15 +1,13 @@
-/*index.jsx*/
-
 import React from "react";
 //Functional Component
 
-const MainPage = () => {
+const Home = () => {
   return (
-    <div>
-      <h3>Welcome to the React Router Tutorial</h3>
-      <small>Main Page</small>
+    <div className="home">
+      <h3>Home</h3>
+      <small>Content</small>
     </div>
   );
 };
 
-export default MainPage;
+export default Home;
