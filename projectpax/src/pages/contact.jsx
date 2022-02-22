@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Donate = () => {
+const Contact = () => {
   return (
-    <div className="donate">
+    <div className="contact">
       <h1>
         Welcome to our website! style=
         {{
@@ -16,4 +16,4 @@ const Donate = () => {
     </div>
   );
 };
-export default Donate;
+export default Contact;

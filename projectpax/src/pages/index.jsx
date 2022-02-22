@@ -1,20 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
+/*index.jsx*/
 
-const Home = () => {
+import React from "react";
+//Functional Component
+
+const MainPage = () => {
   return (
-    <div className="home">
-      <h1>
-        Welcome to our website! style=
-        {{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      </h1>
+    <div>
+      <h3>Welcome to the React Router Tutorial</h3>
+      <small>Main Page</small>
     </div>
   );
 };
 
-export default Home;
+export default MainPage;
