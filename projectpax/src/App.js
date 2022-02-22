@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import ReactDOM from "react-dom";
-import { Redirect } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -14,12 +12,6 @@ import Dogs from "./pages/dogs";
 function App() {
   return (
     <div className="App">
-      <About />
-      <Contact />
-      <Dogs />
-      <Home />
-      <TheFarm />
-
       <Router>
         <Navbar />
         <Routes>
@@ -30,6 +22,12 @@ function App() {
           <Route exact path="/contact" component={Contact} />
         </Routes>
       </Router>
+
+      <About />
+      <Contact />
+      <Dogs />
+      <Home />
+      <TheFarm />
     </div>
   );
 }
